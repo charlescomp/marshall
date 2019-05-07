@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Save CS </title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Open+Sans+Condensed:300" rel="stylesheet">
+  </head>
+
+  <body>
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+          <a href="gallery.html">Gallery</a>
+        </nav>
+
+    <section id ="top-images">
+      <img onclick= "switchImage(this)"src=  "Google.JPG" class = "thumbnail active" alt="">
+      <img onclick= "switchImage(this)" src = "Makerfaire.JPG" class = "thumbnail active"  alt="">
+      <img onclick= "switchImage(this)"src ="Yahoo!.png" class = "thumbnail active"  alt="">
+    </section>
+
+    <section id ="middle-images">
+      <img onclick= "switchImage(this)"src=  "ASC-CEO.jpg" class = "thumbnail active" alt="">
+      <img src = "banner-bg.JPG" id= "shown">
+      <img onclick= "switchImage(this)"src ="Makerfaire1.jpg" class = "thumbnail active"  alt="">
+    </section>
+
+    <section id ="bottom-images">
+      <img onclick= "switchImage(this)"src=  "rochester.jpg" class = "thumbnail active" alt="">
+      <img onclick= "switchImage(this)"src = "lookingatlife.jpg" class = "thumbnail active"  alt="">
+      <img onclick= "switchImage(this)" src="cornell.jpg" class = "thumbnail active"  alt="">
+    </section>
+
+    <script>
+    function switchImage(image){
+      var shownImage = document.querySelector('#shown');
+      shownImage.src = image.src;
+    }
+   </script></body>
+</html>
