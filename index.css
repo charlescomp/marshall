@@ -1,0 +1,155 @@
+body {
+  background-color: rgb(41, 48, 58);
+  color: white;
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+header {
+  background-image: url(visionary.jpg);
+  height: 900px;
+  background-size: cover;
+  background-position: center;
+  padding-left: 100px;
+  padding-top: 130px;
+}
+
+
+#about-section{
+  background-color: white;
+  color: black;
+  margin-left: 15%;
+  margin-top: 24px;
+  margin-bottom: 100px;
+  border-radius: 16px;
+  box-shadow: 2px 2px 5px black;
+}
+#about-section p{
+  color: black;
+}
+
+#about-section table{
+  width: 100%;
+  border: 1px solid;
+  height: 400px;
+}
+
+#about-section table th{
+  background-color: brown;
+  color: white;
+}
+
+#about-section table td{
+  vertical-align: top;
+  border: 1px solid gray;
+  width: 14.28%;
+}
+
+
+#contact-header {
+  background-image: url();
+}
+
+
+h1 {
+  color: rgba(255,255,255, 0.8);
+  font-size: 80px;
+  margin: 0;
+  font-family: 'Dancing Script', cursive;
+}
+
+nav {
+  height: 50px;
+  background-color: #05aa2b;
+}
+
+a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+  line-height: 50px;
+
+  width: 150px;
+  display: inline-block;
+  text-align: center;
+
+  transition: all 0.5s linear;
+}
+
+a:hover {
+  background-color: white;
+  color: rgb(22, 14, 0);
+}
+aside {
+  float: left;
+  width: 30%;
+  padding: 2%;
+  box-sizing: border-box;
+}
+
+article {
+  font-size: 20px;
+}
+section {
+float: left;
+width: 70%;
+padding:2%;
+box-sizing: border-box;
+}
+.logo {
+  position: absolute;
+  top: 150px;
+  right: 100px;
+
+}
+
+.home-image{
+  display: block;
+  float left;
+   width:33.3%;
+}
+
+
+#survey-us {
+
+}
+
+.thumbnail {
+  display: block;
+  width: 25%;
+  float: left;
+  margin-left: 5%;
+}
+
+.thumbnail.active {
+  box-shadow:  0 0 5px white;
+}
+#shown
+{
+  width: 40%;
+  float: left;
+  min-height: 300px;
+margin-left: 3%;
+}
+
+#top-images,#middle-images,#bottom-images {
+  width:100%;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#top-images img:nth-child(1),
+#middle-images img:nth-child(1),
+#bottom-images img:nth-child(1){
+ margin-left: 1%;
+}
+#top-images img:nth-child(2),
+#bottom-images img:nth-child(2){
+ margin-left: 10%;
+}
+#top-images img:nth-child(3),
+#bottom-images img:nth-child(3){
+ margin-left: 10%;
+}
+ #middle-images img:nth-child(3),{
+margin-left: 3%;
+{
