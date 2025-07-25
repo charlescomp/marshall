@@ -15,6 +15,7 @@
       text-align: center;
       text-decoration: none;
       margin: 5px 2px;
+      display: inline-block;
     }
     .fa:hover {
       opacity: 0.7;
@@ -23,6 +24,12 @@
     .fa-linkedin { background: #007bb5; color: white; }
     .fa-soundcloud { background: #ff6600; color: white; }
     .fa-youtube { background: #bb0000; color: white; }
+    .fa-github { background: #333; color: white; }
+    .social-links {
+      list-style: none;
+      padding-left: 0;
+      display: flex;
+    }
   </style>
 </head>
 <body>
@@ -52,12 +59,32 @@
 
     <h2>Yes I am available for hire!</h2>
     <p><a href="Charles-Marshall.pdf">Resume</a></p>
-    <ul>
-      <li><a class="fa fa-facebook" href="https://www.facebook.com/profile.php?id=100002508778867"></a></li>
-      <li><a class="fa fa-linkedin" href="https://www.linkedin.com/in/charlescomp-marshall/"></a></li>
-      <li><a class="fa fa-soundcloud" href="https://soundcloud.com/charles-marshall-870902674"></a></li>
-      <li><a class="fa fa-youtube" href="https://www.youtube.com/channel/UCOm1S89l9gVhnvzGA-opiiQ?view_as=subscriber"></a></li>
-      <li><a class="fa fa-github" href="https://github.com/charlescomp"></a></li>
+    <ul class="social-links">
+      <li>
+        <a href="https://www.facebook.com/profile.php?id=100002508778867" target="_blank" rel="noopener noreferrer">
+          <i class="fa fa-facebook"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/charlescomp-marshall/" target="_blank" rel="noopener noreferrer">
+          <i class="fa fa-linkedin"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://soundcloud.com/charles-marshall-870902674" target="_blank" rel="noopener noreferrer">
+          <i class="fa fa-soundcloud"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/channel/UCOm1S89l9gVhnvzGA-opiiQ?view_as=subscriber" target="_blank" rel="noopener noreferrer">
+          <i class="fa fa-youtube"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/charlescomp" target="_blank" rel="noopener noreferrer">
+          <i class="fa fa-github"></i>
+        </a>
+      </li>
     </ul>
 
     <section id="contact-body">
