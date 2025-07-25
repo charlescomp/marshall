@@ -1,45 +1,49 @@
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Gallery</title>
-    <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery</title>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="subpage-header">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="gallery.html">Gallery</a>
+    </nav>
+    <h1>Gallery</h1>
+  </header>
 
-  <body>
-        <nav>
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
-          <a href="gallery.html">Gallery</a>
-        </nav>
-        <div class="container">
+  <main class="container">
+    <div class="gallery-grid">
+      <img onclick="switchImage(this)" src="Google.JPG" class="thumbnail" alt="Google event">
+      <img onclick="switchImage(this)" src="Makerfaire.JPG" class="thumbnail" alt="Maker Faire">
+      <img onclick="switchImage(this)" src="Yahoo!.png" class="thumbnail" alt="Yahoo visit">
+      <img onclick="switchImage(this)" src="ASC-CEO.jpg" class="thumbnail" alt="CEO talk">
+      <img onclick="switchImage(this)" src="Makerfaire1.jpg" class="thumbnail" alt="Maker Faire booth">
+      <img onclick="switchImage(this)" src="rochester.jpg" class="thumbnail" alt="Rochester trip">
+      <img onclick="switchImage(this)" src="lookingatlife.jpg" class="thumbnail" alt="Looking at life">
+      <img onclick="switchImage(this)" src="cornell.jpg" class="thumbnail" alt="Cornell visit">
+    </div>
 
-    <section id ="top-images">
-      <img onclick= "switchImage(this)"src=  "Google.JPG" class = "thumbnail active" alt="">
-      <img onclick= "switchImage(this)" src = "Makerfaire.JPG" class = "thumbnail active"  alt="">
-      <img onclick= "switchImage(this)"src ="Yahoo!.png" class = "thumbnail active"  alt="">
-    </section>
+    <img src="banner-bg.JPG" id="shown" class="gallery-main" alt="Selected">
+  </main>
 
-    <section id ="middle-images">
-      <img onclick= "switchImage(this)"src=  "ASC-CEO.jpg" class = "thumbnail active" alt="">
-      <img src = "banner-bg.JPG" id= "shown">
-      <img onclick= "switchImage(this)"src ="Makerfaire1.jpg" class = "thumbnail active"  alt="">
-    </section>
-
-    <section id ="bottom-images">
-      <img onclick= "switchImage(this)"src=  "rochester.jpg" class = "thumbnail active" alt="">
-      <img onclick= "switchImage(this)"src = "lookingatlife.jpg" class = "thumbnail active"  alt="">
-      <img onclick= "switchImage(this)" src="cornell.jpg" class = "thumbnail active"  alt="">
-    </section>
-
-    <script>
+  <script>
     function switchImage(image){
-      var shownImage = document.querySelector('#shown');
+      var shownImage = document.getElementById('shown');
       shownImage.src = image.src;
     }
-   </script>
-   </div>
-  </body>
+  </script>
+
+  <footer id="footer">
+    <ul class="copyright">
+      <li>&copy; Marshall Productions</li>
+    </ul>
+  </footer>
+</body>
 </html>
