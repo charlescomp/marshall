@@ -1,95 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact Us</title>
   <link href="index.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <style>
     .fa {
-     padding: 20px;
-     font-size: 30px;
-     width: 50px;
-     text-align: center;
-     text-decoration: none;
-     margin: 5px 2px;
+      padding: 20px;
+      font-size: 30px;
+      width: 50px;
+      text-align: center;
+      text-decoration: none;
+      margin: 5px 2px;
     }
     .fa:hover {
-       opacity: 0.7;
+      opacity: 0.7;
     }
-    .fa-facebook {
-     background: #3B5998;
-     color: white;
-    }
-    .fa-linkedin {
-     background: #007bb5;
-     color: white;
-    }
-    .fa-soundcloud {
-     background: #ff6600;
-     color: white;
-    }
-    .fa-youtube {
-     background: #bb0000;
-     color: white;
-    }
+    .fa-facebook { background: #3B5998; color: white; }
+    .fa-linkedin { background: #007bb5; color: white; }
+    .fa-soundcloud { background: #ff6600; color: white; }
+    .fa-youtube { background: #bb0000; color: white; }
   </style>
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-    <a href="gallery.html">Gallery</a>
-  </nav>
-  <div class="container">
-  <aside id="hours-open">
-    <h2>Hours Of Operation</h2><img alt="" src=
-    "https://www.unr.edu/Images/student-services/student-union/icons/200/hours-button.png"
-    width="300">
-    <ul style="font-size:20px">
-      <li>Monday : 2pm-5pm</li>
-      <li>Tuesday : 3pm-5pm</li>
-      <li>Wednesday : 2pm-5pm</li>
-      <li>Thursday : 3pm-5pm</li>
-      <li>Friday : 2pm-5pm</li>
-    </ul><a href="tel%20-%2077777777">716-000-000</a>
-  </aside>
-  <h2>Yes I am available for hire!</h2>
-  <p><a href="Charles-Marshall.pdf">Resume</a></p>
-  <ul>
-    <li>
-      <a class="fa fa-facebook" href=
-      "https://www.facebook.com/profile.php?id=100002508778867"></a>
-    </li>
-    <li>
-      <a class="fa fa-linkedin" href=
-      "https://www.linkedin.com/in/charlescomp-marshall/"></a>
-    </li>
-    <li>
-      <a class="fa fa-soundcloud" href=
-      "https://soundcloud.com/charles-marshall-870902674"></a>
-    </li>
-    <li>
-      <a class="fa fa-youtube" href=
-      "https://www.youtube.com/channel/UCOm1S89l9gVhnvzGA-opiiQ?view_as=subscriber">
-      </a>
-    </li>
-    <li>
-      <a class="fa fa-github" href="https://github.com/charlescomp"></a>
-    </li>
-  </ul>
-  <section id="contact-body">
-    <form id="contact-us" name="contact-us">
-      <h2>Message Us</h2><label for="name">Name:</label> <input name="email"
-      type="text"><br>
-      <label for="email">email:</label> <input name="email" type="email"><br>
-      <label for="message">Message:</label> 
-      <textarea name="message"></textarea><br>
-      <button>Send Message</button>
-    </form>
-  </section>
-  </div>
+  <header class="subpage-header">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="gallery.html">Gallery</a>
+    </nav>
+    <h1>Contact</h1>
+  </header>
+
+  <main class="container">
+    <aside id="hours-open">
+      <h2>Hours Of Operation</h2>
+      <img alt="open hours" src="https://www.unr.edu/Images/student-services/student-union/icons/200/hours-button.png" width="300">
+      <ul style="font-size:20px">
+        <li>Monday : 2pm-5pm</li>
+        <li>Tuesday : 3pm-5pm</li>
+        <li>Wednesday : 2pm-5pm</li>
+        <li>Thursday : 3pm-5pm</li>
+        <li>Friday : 2pm-5pm</li>
+      </ul>
+      <a href="tel:+1716000000">716-000-000</a>
+    </aside>
+
+    <h2>Yes I am available for hire!</h2>
+    <p><a href="Charles-Marshall.pdf">Resume</a></p>
+    <ul>
+      <li><a class="fa fa-facebook" href="https://www.facebook.com/profile.php?id=100002508778867"></a></li>
+      <li><a class="fa fa-linkedin" href="https://www.linkedin.com/in/charlescomp-marshall/"></a></li>
+      <li><a class="fa fa-soundcloud" href="https://soundcloud.com/charles-marshall-870902674"></a></li>
+      <li><a class="fa fa-youtube" href="https://www.youtube.com/channel/UCOm1S89l9gVhnvzGA-opiiQ?view_as=subscriber"></a></li>
+      <li><a class="fa fa-github" href="https://github.com/charlescomp"></a></li>
+    </ul>
+
+    <section id="contact-body">
+      <form id="contact-us" name="contact-us">
+        <h2>Message Us</h2>
+        <label for="name">Name:</label> <input id="name" name="name" type="text"><br>
+        <label for="email">Email:</label> <input id="email" name="email" type="email"><br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea><br>
+        <button>Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <ul class="copyright">
+      <li>&copy; Marshall Productions</li>
+    </ul>
+  </footer>
 </body>
 </html>
